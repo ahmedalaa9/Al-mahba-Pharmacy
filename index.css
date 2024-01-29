@@ -1,0 +1,28 @@
+.header-sction h2 {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+.header-sction h2::after {
+  content: "";
+  width: 70%;
+  height: 5px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(226, 242, 253);
+  display: block;
+}
+.counter {
+  padding: 3rem 0;
+  background-image: linear-gradient(
+      rgba(226, 242, 253, 0.7),
+      rgba(226, 242, 253, 0.7)
+    ),
+    url(../about.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top top;
+}
